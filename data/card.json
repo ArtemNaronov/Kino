@@ -1,0 +1,29 @@
+{
+  "card": {
+    "0":{
+      "title": "Тест 1",
+      "image": "2021-05-14 17-03-00.jpg",
+      "desc": "Какой-то текст"
+    },
+    "1":{
+      "title": "Тест 2",
+      "image": "Games_Stone_character_on_the_screen_of_the_game_Dota_2_110298_.png",
+      "desc": "Какой-то текст"
+    },
+    "2":{
+      "title": "Тест 3",
+      "image": "mobile_file_2021-02-20_13-09-40 (1).jpg",
+      "desc": "Какой-то текст"
+    },
+    "3":{
+      "title": "Тест 4",
+      "image": "mobile_file_2021-02-20_13-12-56.jpg",
+      "desc": "Какой-то текст"
+    },
+    "4":{
+      "title": "Тест 5",
+      "image": "SQ_X8BlntjI.jpg",
+      "desc": "Какой-то текст"
+    }
+  }
+}
