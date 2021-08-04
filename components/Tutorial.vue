@@ -2,11 +2,15 @@
   <div>
     <Header />
     <div class="content">
-      <
+      <div class="banner">
+        <img src="/assets/img/OhCKaQSzkAs.jpg" />
+      </div>
       <div class="card" v-for="item in cardList" :key="item">
         <div class="CardTitle">{{ item.title }}</div>
         <div class="CardContent">
-          <img :src="'/assets/img/testGal/' + item.image">
+          <a :href='"/movie/" + item.id'>
+            <img :src="'/assets/img/testGal/' + item.image">
+          </a>
         </div>
         <div class="CardFooter">{{item.desc}}</div>
       </div>
