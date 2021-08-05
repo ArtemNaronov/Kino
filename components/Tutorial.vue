@@ -1,10 +1,10 @@
 <template>
   <div>
     <Header />
+    <div class="banner">
+      <img src="/assets/img/OhCKaQSzkAs.jpg" />
+    </div>
     <div class="content">
-      <div class="banner">
-        <img src="/assets/img/OhCKaQSzkAs.jpg" />
-      </div>
       <div class="card" v-for="item in cardList" :key="item">
         <div class="CardTitle">{{ item.title }}</div>
         <div class="CardContent">
