@@ -29,7 +29,7 @@
           </div>
           <input type="button" value="Войти">
         </form>
-        <span class="ChangeForm" @click="changeForm(tab == 'LogIn' ? 'Registration' : 'LogIn')">Нет аккаунта?</span>
+        <span class="ChangeForm" v-html="tab == 'LogIn' ? 'Нет аккаунта?' : 'Есть аккаунт?'" @click="changeForm(tab == 'LogIn' ? 'Registration' : 'LogIn')"></span>
       </div>
 
     </div>
