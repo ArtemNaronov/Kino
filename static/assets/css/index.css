@@ -2,6 +2,80 @@ body{
   margin: 0;
   background: #4e4e4e;
 }
+.LogIn.activeForm{
+  display: flex;
+}
+.LogIn {
+  position: fixed!important;
+  width: 100%!important;
+  height: 100%;
+  z-index: 100000;
+  background: rgba(47,54,57,.8);
+  transition: 1s;
+  display: none;
+  justify-content: center;
+  padding-top: 50px;
+}
+.closePopUp {
+  height: 16px;
+  padding-top: 8px;
+  padding-right: 8px;
+  margin-bottom: 8px;
+}
+.closePopUp img {
+  float: right;
+}
+.closePopUpImg {
+  cursor: pointer;
+}
+.ChangeForm{
+  margin-top: 16px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+.LogIn .LogInForm{
+  width: 288px!important;
+  max-height: 456px;
+  padding-bottom: 24px;
+
+  position: fixed;
+  background: #fff;
+  border: 1px solid #d5d7d7;
+  box-shadow: 0 4px 12px rgb(68 75 77 / 10%);
+  border-radius: 6px;
+  text-align: center;
+}
+.LogInForm .form{
+  display: grid;
+  text-align: left;
+  padding: 10px 20px;
+  width: auto;
+  margin-top: 20px;
+}
+.LogInForm .form input{
+  margin-bottom: 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  height: 25px;
+}
+.LogInForm input[type="button"]:active {
+  background: #4e4e4e;
+}
+.LogInForm input[type="button"]{
+  width: 130px;
+  height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1f1f1f;
+  color: #e4dcdc;
+}
+span.FormTitle{
+  font-size: 24px;
+  text-align: center;
+  color: #2f3639;
+  margin-bottom: 24px;
+}
 .Header{
   height: 100px;
   background-color: #1f1f1f;
@@ -11,15 +85,27 @@ body{
   z-index: 9999;
 }
 .Header .end{
-  height: 100%;
   position: absolute;
   right: 20px;
+  padding: 0 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  border: 2px solid #02fdbf;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #2f3639;
+  cursor: pointer;
+  top: 25px;
+  text-decoration: none;
 }
 .Header .end img{
-  height: 60px;
-  margin-right: 4vw;
-  margin-top: 20px;
-  filter: invert(1);
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 .Header .title{
   width: 100%;
@@ -109,5 +195,13 @@ body{
   .Movie {
     width: 90%;
     height: 200px;
+  }
+  .Header .end{
+    top: 6px;
+    height: auto;
+    right: 10px;
+  }
+  .Header .end span{
+    display: none;
   }
 }

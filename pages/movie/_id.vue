@@ -1,7 +1,9 @@
 <template>
   <div>
+    <error v-if="this.$store.getters['get_show_error']"> </error>
+
     <Header />
-    <div class="Movie">
+    <div class="Movie" v-if="cardList[this.product_id].link != undefined">
       <iframe width="100%" height="100%" :src="'https://www.youtube.com/embed/' + cardList[this.product_id].link" />
     </div>
   </div>
@@ -26,7 +28,8 @@
         };
       }
       catch (error) {
-      //res.statusCode = 404;
+        // res.statusCode = 404;
+        // store.commit("set_show_error", true);
       }
     }
   }

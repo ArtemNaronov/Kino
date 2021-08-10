@@ -24,6 +24,6 @@
       return {
         cardList: this.$store.state.card.cardList.card
       }
-    }
+    },
   }
 </script>
