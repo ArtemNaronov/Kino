@@ -36,7 +36,7 @@ body{
 }
 .LogIn .LogInForm{
   width: 288px!important;
-  max-height: 470px;
+  max-height: 500px;
   padding-bottom: 24px;
 
   position: fixed;
