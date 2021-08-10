@@ -1,8 +1,7 @@
 <template>
   <div>
-    <error v-if="this.$store.getters['get_show_error']"> </error>
-
     <Header />
+    <LogIn />
     <div class="Movie" v-if="cardList[this.product_id].link != undefined">
       <iframe width="100%" height="100%" :src="'https://www.youtube.com/embed/' + cardList[this.product_id].link" />
     </div>
