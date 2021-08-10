@@ -9,7 +9,7 @@
             <span>Email</span>
             <input id="LogInEmail" type="email" />
 
-            <span>Password</span>
+            <span>Пароль</span>
             <input id="LogInPass" type="password" />
           </div>
           <input type="button" value="Войти">
@@ -18,13 +18,17 @@
           <div class="closePopUp" @click="$store.commit('set_activeForm', false)"><img alt="" class="closePopUpImg lazyLoad isLoaded" src="/assets/icons/Close.svg"></div>
           <span class="FormTitle">Регистрация</span>
           <div class="form">
+
+            <span>Имя</span>
+            <input id="RegName" type="text" />
+
             <span>Email</span>
             <input id="RegEmail" type="email" />
 
-            <span>Password</span>
+            <span>Пароль</span>
             <input id="RegPass" type="password" />
 
-            <span>Repeat the password</span>
+            <span>Повторите пароль</span>
             <input id="RegPass" type="password" />
           </div>
           <input type="button" value="Войти">
