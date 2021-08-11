@@ -119,6 +119,28 @@ span.FormTitle{
   font-family: "Graphik Kinopoisk LC Web",Arial,Tahoma,Verdana,sans-serif;
 
 }
+.Games {
+  display: flex;
+  justify-content: center;
+}
+.Games div {
+  width: 200px;
+  text-align: center;
+  margin: 30px auto;
+  cursor: pointer;
+}
+.Games img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.Games span{
+  color: #fff;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -171,6 +193,13 @@ span.FormTitle{
   }
 }
 @media (max-width: 898px){
+  .Games img{
+    width: 100px;
+    height: 100px;
+  }
+  .Games span{
+    font-size: 20px;
+  }
   .Header{
     height: 38px;
   }

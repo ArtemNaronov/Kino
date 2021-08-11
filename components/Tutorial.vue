@@ -4,12 +4,18 @@
     <div class="banner">
       <img src="/assets/img/OhCKaQSzkAs.jpg" />
     </div>
+    <div class="Games">
+      <div v-for="item in gamesList" :key="item.game" @click="GameSelected = item.id">
+        <img :src="'/assets/img/images/' + item.image">
+        <span>{{ item.title }}</span>
+      </div>
+    </div>
     <div class="content">
-      <div class="card" v-for="item in cardList" :key="item">
+      <div class="card" v-for="item in cardList" :key="item" v-if="item.game == GameSelected">
         <div class="CardTitle">{{ item.title }}</div>
         <div class="CardContent">
           <a :href='"/movie/" + item.id'>
-            <img :src="'/assets/img/testGal/' + item.image">
+            <img :src="'https://i.ytimg.com/vi/' + item.link + '/hqdefault.jpg'">
           </a>
         </div>
         <div class="CardFooter">{{item.desc}}</div>
@@ -22,7 +28,9 @@
   export default {
     data() {
       return {
-        cardList: this.$store.state.card.cardList.card
+        cardList: this.$store.state.card.cardList.card,
+        gamesList: this.$store.state.games.gameList.games,
+        GameSelected: 0,
       }
     },
   }

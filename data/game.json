@@ -1,0 +1,20 @@
+{
+  "games": {
+    "0":{
+      "id": "0",
+      "title": "Red Dead Redemption 2",
+      "image": "red_dead_redemption_2.jpg"
+    },
+    "1":{
+      "id": "1",
+      "title": "The Evil Within 2",
+      "image": "DDvE6qfXgAAjm5l.jpg"
+    },
+    "2":{
+      "id": "2",
+      "title": "Dishonored 2",
+      "image": "dishonored-2.jpg"
+    }
+
+  }
+}
