@@ -193,9 +193,13 @@ span.FormTitle{
   }
 }
 @media (max-width: 898px){
+  .Games div{
+    display: grid;
+  }
   .Games img{
     width: 100px;
     height: 100px;
+    margin: auto;
   }
   .Games span{
     font-size: 20px;
