@@ -6,7 +6,7 @@
       <iframe width="100%" height="100%" :src="'https://www.youtube.com/embed/' + cardList[this.product_id].link" />
       <div class="playlist swiper-container swiper-wrapper">
         <div class="swiper-wrapper">
-          <div v-for="card in film" :key="card" class="swiper-slide">
+          <div v-for="card in cardList" :key="card" v-if="cardList[product_id].game == card.game" class="swiper-slide">
             <div class="video" :class="card.id == product_id ? 'active' : ''">
               <a :href='"/movie/" + card.id' v-if="card.id != product_id" style="width: 100%">
                 <img :src="'https://i.ytimg.com/vi/' + card.link + '/hqdefault.jpg'" style="width: inherit;">
@@ -51,7 +51,6 @@
     },
     mounted() {
       this.init_swiper();
-      this.filterArr();
     },
     methods: {
       init_swiper() {
@@ -60,14 +59,6 @@
           spaceBetween: 10,
           slidesPerView: "3",
         });
-      },
-      filterArr(){
-        console.log(this.product_id)
-        for (let i = 0; i < Object.keys(this.cardList).length; i++) {
-          if(this.cardList[this.product_id].game ==  this.cardList[i].game){
-            this.film.push(this.cardList[i])
-          }
-        }
       }
     },
   }
