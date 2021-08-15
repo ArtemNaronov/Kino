@@ -5,7 +5,7 @@
       <img src="/assets/img/OhCKaQSzkAs.jpg" />
     </div>
     <div class="Games">
-      <div v-for="item in gamesList" :key="item.game" @click="GameSelected = item.id">
+      <div v-for="item in gamesList" :class="GameSelected == item.id ? 'activeGame' : ''" :key="item.game" @click="GameSelected = item.id">
         <img :src="'/assets/img/images/' + item.image">
         <span>{{ item.title }}</span>
       </div>
@@ -21,6 +21,7 @@
         <div class="CardFooter">{{item.desc}}</div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
