@@ -54,10 +54,10 @@ import breadcrumbs from '../../components/breadcrumbs.vue';
       }
     },
     mounted() {
-      this.init_swiper();
+      this.initSwiper();
     },
     methods: {
-      init_swiper() {
+      initSwiper() {
         var mySwiper = new Swiper(".swiper-container", {
           speed: 1000,
           spaceBetween: 10,
