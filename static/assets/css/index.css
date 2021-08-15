@@ -196,6 +196,7 @@ span.FormTitle{
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 999;
   height: 50px;
   background-color: #1f1f1f;
 }
@@ -232,6 +233,38 @@ span.FormTitle{
 }
 .video.active {
   opacity: 0.3;
+}
+.breadCrumb ol, ul {
+  list-style: none;
+}
+.breadCrumb li {
+  display: inline;
+}
+.breadCrumb ul li:after {
+  content: "\00B7";
+  padding-left: 4px;
+  position: relative;
+  top: 0;
+  color: #828688;
+}
+.breadCrumb ul li.active{
+  color: #fff
+}
+.breadCrumb ul li.active:after {
+  content: "";
+}
+.breadCrumb li a{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 14px;
+  color: #828688;
+  text-decoration: none;
+  position: relative;
+  text-transform: capitalize;
+  text-shadow: 0 0 6px rgb(255 255 255 / 70%);
+  color: #fff;
 }
 @media (max-width: 1360px){
   .content .card {

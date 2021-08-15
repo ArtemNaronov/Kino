@@ -2,6 +2,7 @@
   <div>
     <Header />
     <LogIn />
+    <breadcrumbs />
     <div class="Movie" v-if="cardList[this.product_id].link != undefined">
       <iframe width="100%" height="100%" :src="'https://www.youtube.com/embed/' + cardList[this.product_id].link" />
       <div class="playlist swiper-container swiper-wrapper">
@@ -21,12 +22,15 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 <script>
   import "@/static/assets/css/index.css";
   import "@/static/swiper-bundle.css";
+import breadcrumbs from '../../components/breadcrumbs.vue';
   export default {
+  components: { breadcrumbs },
     data() {
       return {
         cardList: this.$store.state.card.cardList.card,
