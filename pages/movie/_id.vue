@@ -28,9 +28,9 @@
 <script>
   import "@/static/assets/css/index.css";
   import "@/static/swiper-bundle.css";
-import breadcrumbs from '../../components/breadcrumbs.vue';
+  import breadcrumbs from '../../components/breadcrumbs.vue';
   export default {
-  components: { breadcrumbs },
+    components: { breadcrumbs },
     data() {
       return {
         cardList: this.$store.state.card.cardList.card,

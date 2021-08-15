@@ -2,7 +2,7 @@
     <div class="LogIn" :class="this.$store.getters['getActiveForm']? 'activeForm' : ''">
       <div class="LogInForm">
         <form v-if="this.tab == 'LogIn'">
-          <div class="closePopUp" @click="$store.commit('set_activeForm', false)"><img alt="" class="closePopUpImg lazyLoad isLoaded" src="/assets/icons/Close.svg"></div>
+          <div class="closePopUp" @click="setActiveForm()"><img alt="" class="closePopUpImg lazyLoad isLoaded" src="/assets/icons/Close.svg"></div>
           <span class="FormTitle">Авторизация</span>
           <div class="form">
             <span>Email</span>
@@ -14,7 +14,7 @@
           <input type="button" value="Войти">
         </form>
         <form v-if="this.tab == 'Registration'">
-          <div class="closePopUp" @click="$store.commit('set_activeForm', false)"><img alt="" class="closePopUpImg lazyLoad isLoaded" src="/assets/icons/Close.svg"></div>
+          <div class="closePopUp" @click="setActiveForm()"><img alt="" class="closePopUpImg lazyLoad isLoaded" src="/assets/icons/Close.svg"></div>
           <span class="FormTitle">Регистрация</span>
           <div class="form">
 
@@ -32,7 +32,7 @@
           </div>
           <input type="button" value="Войти">
         </form>
-        <span class="ChangeForm" v-html="tab == 'LogIn' ? 'Нет аккаунта?' : 'Есть аккаунт?'" @click="changeForm(tab == 'LogIn' ? 'Registration' : 'LogIn')"></span>
+        <span class="ChangeForm" v-html="tab == 'LogIn' ? 'Нет аккаунта?' : 'Есть аккаунт?'" @click="changeForm(tab)"></span>
       </div>
 
     </div>
@@ -46,7 +46,11 @@ export default {
   },
   methods: {
     changeForm: function (value){
-      this.tab = value;
+      this.tab = value == 'LogIn' ? 'Registration' : 'LogIn';
+
+    },
+    setActiveForm() {
+      this.$store.commit('set_activeForm', false)
     }
   }
 }

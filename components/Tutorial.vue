@@ -5,7 +5,7 @@
       <img src="/assets/img/OhCKaQSzkAs.jpg" />
     </div>
     <div class="Games">
-      <div v-for="item in gamesList" :class="GameSelected == item.id ? 'activeGame' : ''" :key="item.game" @click="GameSelected = item.id">
+      <div v-for="item in gamesList" :class="GameSelected == item.id ? 'activeGame' : ''" :key="item.game" @click="GameChange(item.id)">
         <img :src="'/assets/img/images/' + item.image">
         <span>{{ item.title }}</span>
       </div>
@@ -34,5 +34,10 @@
         GameSelected: 0,
       }
     },
+    methods: {
+      GameChange(value){
+        this.GameSelected = value
+      }
+    }
   }
 </script>
