@@ -1,6 +1,6 @@
 {
-  "card": {
-    "0":{
+  "card": [
+    {
       "id": "0",
       "title": "Chapter 2 pt.1",
       "image": "TrZiJqf.jpeg",
@@ -8,7 +8,7 @@
       "link": "UKmO9-6a07U",
       "game": "0"
     },
-    "1":{
+    {
       "id": "1",
       "title": "Chapter 2 pt.2",
       "image": "zEl27H5.jpeg",
@@ -16,7 +16,7 @@
       "link": "C44NStuu8v4",
       "game": "0"
     },
-    "2":{
+    {
       "id": "2",
       "title": "Chapter 2 pt.3",
       "image": "CbBFY7J.jpeg",
@@ -24,7 +24,7 @@
       "link": "NJhSwc98z7s",
       "game": "0"
     },
-    "3":{
+    {
       "id": "3",
       "title": "Chapter 2 pt.4",
       "image": "kdwlHWd.jpeg",
@@ -32,7 +32,7 @@
       "link": "XYYwAH8RcOc",
       "game": "0"
     },
-    "4":{
+    {
       "id": "4",
       "title": "Chapter 2 pt.5",
       "image": "ps45eAo.jpeg",
@@ -40,7 +40,7 @@
       "link": "cwUIjGd7vNY",
       "game": "0"
     },
-    "5":{
+    {
       "id": "5",
       "title": "Часть 1",
       "image": "hqdefault.jpg",
@@ -48,7 +48,7 @@
       "link": "tv_RY9gVejg",
       "game": "2"
     },
-    "6":{
+    {
       "id": "6",
       "title": "Часть 2",
       "image": "hqdefault.jpg",
@@ -56,7 +56,7 @@
       "link": "goSMXS6F2rI",
       "game": "2"
     },
-    "7":{
+    {
       "id": "7",
       "title": "Часть 3",
       "image": "hqdefault.jpg",
@@ -64,7 +64,7 @@
       "link": "9XdFouIYV1U",
       "game": "2"
     },
-    "8":{
+    {
       "id": "8",
       "title": "Часть 4",
       "image": "hqdefault.jpg",
@@ -72,7 +72,7 @@
       "link": "EDz3CRv-Rx8",
       "game": "2"
     },
-    "9":{
+    {
       "id": "9",
       "title": "Часть 5",
       "image": "hqdefault.jpg",
@@ -80,7 +80,7 @@
       "link": "ZoVl8b9MqBs",
       "game": "2"
     },
-    "10":{
+    {
       "id": "10",
       "title": "Chapter 2 pt.6",
       "image": "hqdefault.jpg",
@@ -88,7 +88,7 @@
       "link": "p1f86zaLzAY",
       "game": "0"
     },
-    "11":{
+    {
       "id": "11",
       "title": "Часть 6",
       "image": "hqdefault.jpg",
@@ -96,7 +96,7 @@
       "link": "yTNexVOmigc",
       "game": "2"
     },
-    "12":{
+    {
       "id": "12",
       "title": "Часть 1",
       "image": "hqdefault.jpg",
@@ -104,7 +104,7 @@
       "link": "FLSZtLxJPIk",
       "game": "1"
     },
-    "13":{
+    {
       "id": "13",
       "title": "Chapter 2 pt.7",
       "image": "hqdefault.jpg",
@@ -112,7 +112,7 @@
       "link": "voiOWtGfgPU",
       "game": "0"
     },
-    "14":{
+    {
       "id": "14",
       "title": "Chapter 2 pt.8",
       "image": "hqdefault.jpg",
@@ -120,7 +120,7 @@
       "link": "uc6xvP4b3EE",
       "game": "0"
     },
-    "15":{
+    {
       "id": "15",
       "title": "Chapter 2 pt.9",
       "image": "hqdefault.jpg",
@@ -128,7 +128,7 @@
       "link": "5O4wHojZOoU",
       "game": "0"
     },
-    "16":{
+    {
       "id": "16",
       "title": "Часть 2",
       "image": "hqdefault.jpg",
@@ -136,7 +136,7 @@
       "link": "dk5eAIXZSPo",
       "game": "1"
     },
-    "17":{
+    {
       "id": "17",
       "title": "Chapter 3 pt.1",
       "image": "hqdefault.jpg",
@@ -144,5 +144,5 @@
       "link": "tp3Aog4mH7w",
       "game": "0"
     }
-  }
+  ]
 }

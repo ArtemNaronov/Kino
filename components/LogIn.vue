@@ -1,41 +1,44 @@
 <template>
-    <div class="LogIn" :class="this.$store.getters['getActiveForm']? 'activeForm' : ''">
-      <div class="LogInForm">
-        <form v-if="this.tab == 'LogIn'">
-          <div class="closePopUp" @click="setActiveForm()"><img alt="" class="closePopUpImg lazyLoad isLoaded" src="/assets/icons/Close.svg"></div>
-          <span class="FormTitle">Авторизация</span>
-          <div class="form">
+  <div class="LogIn activeForm" v-if="activeForm" @click="setActiveForm()">
+    <div class="LogInForm" @click.stop>
+      <form>
+        <div class="closePopUp" @click="setActiveForm()"><img alt="" class="closePopUpImg lazyLoad isLoaded"
+            src="/assets/icons/Close.svg"></div>
+        <span class="FormTitle">{{ tab == 'LogIn' ? 'Авторизация' : 'Регистрация' }}</span>
+        <div class="form">
+          <div v-if="tab == 'LogIn'">
             <span>Email</span>
             <input id="LogInEmail" type="email" />
-
+          </div>
+          <div v-if="tab == 'LogIn'">
             <span>Пароль</span>
             <input id="LogInPass" type="password" />
           </div>
-          <input type="button" value="Войти">
-        </form>
-        <form v-if="this.tab == 'Registration'">
-          <div class="closePopUp" @click="setActiveForm()"><img alt="" class="closePopUpImg lazyLoad isLoaded" src="/assets/icons/Close.svg"></div>
-          <span class="FormTitle">Регистрация</span>
-          <div class="form">
-
+          <div v-if="tab == 'Registration'">
             <span>Имя</span>
             <input id="RegName" type="text" />
-
+          </div>
+          <div v-if="tab == 'Registration'">
             <span>Email</span>
             <input id="RegEmail" type="email" />
-
+          </div>
+          <div v-if="tab == 'Registration'">
             <span>Пароль</span>
             <input id="RegPass" type="password" />
-
+          </div>
+          <div v-if="tab == 'Registration'">
             <span>Повторите пароль</span>
             <input id="RegPass" type="password" />
           </div>
-          <input type="button" value="Войти">
-        </form>
-        <span class="ChangeForm" v-html="tab == 'LogIn' ? 'Нет аккаунта?' : 'Есть аккаунт?'" @click="changeForm(tab)"></span>
-      </div>
+        </div>
+        <input type="button" :value="tab == 'LogIn' ? 'Войти' : 'Регистрация'">
+      </form>
 
+      <span class="ChangeForm" v-html="tab == 'LogIn' ? 'Нет аккаунта?' : 'Есть аккаунт?'"
+        @click="changeForm(tab)"></span>
     </div>
+
+  </div>
 </template>
 <script>
 export default {
@@ -51,6 +54,11 @@ export default {
     },
     setActiveForm() {
       this.$store.commit('set_activeForm', false)
+    }
+  },
+  computed: {
+    activeForm() {
+      return this.$store.getters['getActiveForm']
     }
   }
 }
